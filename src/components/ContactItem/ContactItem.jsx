@@ -18,3 +18,10 @@ export const ContactItem = ({ id, number, name, onDeleteContactItem }) => {
     </>
   );
 };
+
+ContactItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  onDeleteContactItem: PropTypes.func.isRequired,
+};
